@@ -38,6 +38,7 @@ namespace Flappy_Game
             this.basePic = new System.Windows.Forms.PictureBox();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.bannerText = new System.Windows.Forms.Label();
+            this.LossText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flappyBird)).BeginInit();
@@ -111,12 +112,23 @@ namespace Flappy_Game
             this.bannerText.TabIndex = 6;
             this.bannerText.Text = "SuperMan : Code from Home";
             // 
+            // LossText
+            // 
+            this.LossText.AutoSize = true;
+            this.LossText.Font = new System.Drawing.Font("Unispace", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LossText.Location = new System.Drawing.Point(150, 194);
+            this.LossText.Name = "LossText";
+            this.LossText.Size = new System.Drawing.Size(246, 25);
+            this.LossText.TabIndex = 7;
+            this.LossText.Text = "HOLD SPACE TO FLY!";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(534, 530);
+            this.Controls.Add(this.LossText);
             this.Controls.Add(this.bannerText);
             this.Controls.Add(this.basePic);
             this.Controls.Add(this.ScoreText);
@@ -125,6 +137,7 @@ namespace Flappy_Game
             this.Controls.Add(this.pipeTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "SuperMan : The Game";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gameKeyDown);
@@ -149,6 +162,7 @@ namespace Flappy_Game
         private System.Windows.Forms.PictureBox basePic;
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Label bannerText;
+        private System.Windows.Forms.Label LossText;
     }
 }
 

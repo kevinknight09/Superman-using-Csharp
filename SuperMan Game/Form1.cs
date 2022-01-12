@@ -16,8 +16,6 @@ namespace Flappy_Game
         int gravity = 5;
         int score = 0;
         
-
-
         public Form1()
         {
             InitializeComponent();
@@ -56,16 +54,21 @@ namespace Flappy_Game
             pipeTop.Left -= pipeSpeed;
             ScoreText.Text = "Score :" + score;
             bannerText.Text = "SuperMan : Code from Home";
+            LossText.Text = "HOLD SPACE TO FLY!";
 
             if (pipeBottom.Left < -50)
             {
                 score++;
-                pipeBottom.Left = 700;
+                Random rndm = new Random();
+                int randomVal = rndm.Next(580, 720);
+                pipeBottom.Left = randomVal;
             }
             if(pipeTop.Left <-50)
             {
                 score++;
-                pipeTop.Left = 700;
+                Random rndm = new Random();
+                int randomVal = rndm.Next(580, 720);
+                pipeTop.Left = randomVal;
             }
 
             if(flappyBird.Bounds.IntersectsWith(pipeBottom.Bounds) || 
@@ -82,7 +85,8 @@ namespace Flappy_Game
         private void endGame()
         {
             gameTimer.Stop();
-            bannerText.Text = "You scored " + score + " Press S to Restart";
+            bannerText.Text = "You scored " + score + " Points Pal";
+            LossText.Text = "PRESS 'S' TO RESTART";
 
         }
     }

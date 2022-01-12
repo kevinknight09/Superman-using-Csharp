@@ -143,9 +143,9 @@ namespace Flappy_Game
         private System.Windows.Forms.PictureBox pipeTop;
         private System.Windows.Forms.PictureBox pipeBottom;
         private System.Windows.Forms.PictureBox flappyBird;
-        private System.Windows.Forms.PictureBox ground;
+        
         private System.Windows.Forms.Label ScoreText;
-        private System.Windows.Forms.PictureBox Ground;
+        
         private System.Windows.Forms.PictureBox basePic;
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Label bannerText;

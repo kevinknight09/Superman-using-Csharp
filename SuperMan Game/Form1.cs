@@ -78,7 +78,7 @@ namespace Flappy_Game
             }
 
         }
-
+        // Handling the event of ending the game //
         private void endGame()
         {
             gameTimer.Stop();

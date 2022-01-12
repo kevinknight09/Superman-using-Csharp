@@ -39,6 +39,7 @@ namespace Flappy_Game
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.bannerText = new System.Windows.Forms.Label();
             this.LossText = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flappyBird)).BeginInit();
@@ -122,12 +123,24 @@ namespace Flappy_Game
             this.LossText.TabIndex = 7;
             this.LossText.Text = "HOLD SPACE TO FLY!";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.Location = new System.Drawing.Point(441, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Rounak Saha";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(534, 530);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LossText);
             this.Controls.Add(this.bannerText);
             this.Controls.Add(this.basePic);
@@ -163,6 +176,7 @@ namespace Flappy_Game
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Label bannerText;
         private System.Windows.Forms.Label LossText;
+        private System.Windows.Forms.Label label1;
     }
 }
 

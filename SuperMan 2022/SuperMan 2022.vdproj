@@ -41,7 +41,7 @@
             {
             "Enabled" = "11:TRUE"
             "PromptEnabled" = "11:TRUE"
-            "PrerequisitesLocation" = "2:2"
+            "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
                 "Items"
@@ -162,7 +162,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SuperMan 2022"
         "ProductCode" = "8:{D40C6992-7A60-4AFE-BA8F-EE5A7E6932DF}"
-        "PackageCode" = "8:{731A13A6-CC0A-4293-AB62-9EDAE1BEF8D0}"
+        "PackageCode" = "8:{87EB4B3A-C4BE-4A7B-B642-7B076D47AA4C}"
         "UpgradeCode" = "8:{8E00BD85-3B0C-458B-8F9C-EE611DC077E2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
